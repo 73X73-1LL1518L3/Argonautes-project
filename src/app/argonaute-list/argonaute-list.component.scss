@@ -1,0 +1,22 @@
+ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+li{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 320px){
+    ul{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    li{
+      font-size: 25px;
+    }
+  }
